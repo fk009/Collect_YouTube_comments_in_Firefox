@@ -18,6 +18,9 @@ from selenium.webdriver.firefox.options import Options
 
 # FirefoxWebDriverのパスを指定します。
 gecko_path = 'F:/geckodriver-v0.34.0-win32/geckodriver.exe'  # ここにダウンロードしたGeckoDriverのパスを指定してください。
+firefox_path = 'C:/Program Files/Mozilla Firefox/firefox.exe'
+
+
 
 
 import os
@@ -58,7 +61,7 @@ youtube_urls = read_text_file(yotubeURL_file_path)
 def start_browser():
     options = Options()
     options.page_load_strategy = 'eager'  # ページの読み込み戦略を設定します。
-    options.binary_location = 'C:/Program Files/Mozilla Firefox/firefox.exe'
+    options.binary_location = firefox_path
     service = Service(executable_path=gecko_path)
     return webdriver.Firefox(service=service, options=options)
 
