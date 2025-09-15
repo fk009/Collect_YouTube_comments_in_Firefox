@@ -4,7 +4,7 @@ YouTubeの複数の動画から自動的にコメントを収集し、CSVファ�
 
 ## 概要
 
-![pinterest_profile_image](Collect_YouTube_comments_in_Firefox/images/ss_img_1.png)
+![pinterest_profile_image](https://github.com/fk009/Collect_YouTube_comments_in_Firefox/raw/main/images/ss_img_1.png)
 
 
 このプログラムは、指定されたYouTube動画のURLリストからコメントを自動取得し、動画ごとに整理されたCSVファイルとして出力します。SeleniumとFirefoxブラウザを使用して、人間らしいスクロール動作を模擬しながらコメントを収集します。
